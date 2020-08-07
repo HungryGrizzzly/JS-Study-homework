@@ -64,3 +64,18 @@ function isAnagramm(anagramm1, anagramm2) {
 }
 
 console.log(isAnagramm("finder", "fried"));
+
+// Напишите функцию, которая возвращает число из последовательности фибоначи по его порядковому номеру.
+
+function fibonacci(Number) {
+	let first = 1;
+	let second = 1;
+	for (let i = 3; Number >= i; i++) {
+		let sum = first + second;
+		first = second;
+		second = sum;
+	}
+	return second;
+}
+
+console.log(fibonacci(3));
