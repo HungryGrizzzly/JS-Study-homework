@@ -44,3 +44,13 @@ function sum(x, y) {
 	}
 }
 console.log(sum(5)(5));
+
+// Напишите функцию, которая проверит, является ли слово палиндромом.
+
+function isPalindrome(str) {
+	str = str.toLowerCase();
+
+	return str === str.split('').reverse().join('');
+}
+
+console.log(isPalindrome('agga'))
