@@ -50,7 +50,17 @@ console.log(sum(5)(5));
 function isPalindrome(str) {
 	str = str.toLowerCase();
 
-	return str === str.split('').reverse().join('');
+	return str === str.split("").reverse().join("");
 }
 
-console.log(isPalindrome('agga'))
+console.log(isPalindrome("agga"));
+
+// Напишите функцию, которая принимает два аргумента и проверяет, является ли одно слово анаграммой другого.
+
+function isAnagramm(anagramm1, anagramm2) {
+	anagramm1 = anagramm1.toLowerCase().split("").sort().join("");
+	anagramm2 = anagramm2.toLowerCase().split("").sort().join("");
+	return anagramm1 === anagramm2;
+}
+
+console.log(isAnagramm("finder", "fried"));
