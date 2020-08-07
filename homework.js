@@ -20,3 +20,14 @@ for (let i = 0; i < 5; i++) {
 		console.log(i);
 	}, 1000);
 }
+
+// Напишите функцию, которая принимает строку в качестве аргумента и возвращает ее развернутой в обратную сторону.
+
+function reverseString(str) {
+	let newString = "";
+	for (let i = str.length - 1; i >= 0; i--) {
+		newString += str[i];
+	}
+	return newString;
+}
+console.log(reverseString("Maxleid"));
