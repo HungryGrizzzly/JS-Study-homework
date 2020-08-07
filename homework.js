@@ -31,3 +31,16 @@ function reverseString(str) {
 	return newString;
 }
 console.log(reverseString("Maxleid"));
+
+// Напишите функцию, которая принимает два аргумента и возвращает их сумму.
+
+function sum(x, y) {
+	if (arguments.length === 1) {
+		return function (y) {
+			return x + y;
+		};
+	} else {
+		return x + y;
+	}
+}
+console.log(sum(5)(5));
