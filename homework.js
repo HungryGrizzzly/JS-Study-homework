@@ -23,6 +23,7 @@ for (let i = 0; i < 5; i++) {
 
 // Напишите функцию, которая принимает строку в качестве аргумента и возвращает ее развернутой в обратную сторону.
 
+// Решается через функции работы со строками
 function reverseString(str) {
 	let newString = "";
 	for (let i = str.length - 1; i >= 0; i--) {
@@ -34,6 +35,7 @@ console.log(reverseString("Maxleid"));
 
 // Напишите функцию, которая принимает два аргумента и возвращает их сумму.
 
+// лучше использовать rest: function a(...args)
 function sum(x, y) {
 	if (arguments.length === 1) {
 		return function (y) {
@@ -79,3 +81,5 @@ function fibonacci(Number) {
 }
 
 console.log(fibonacci(3));
+
+// В целом неплохо. Почитай про кодстайл
